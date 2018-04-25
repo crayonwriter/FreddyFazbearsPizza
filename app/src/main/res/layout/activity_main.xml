@@ -3,32 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.android.helloandroid.MainActivity">
+    tools:context="com.example.android.freddyfazbearspizza.MainActivity">
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/android_diploma"
-        android:scaleType="center"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/fnaflogofreddy"
+            android:scaleType="center" />
 
         <TextView
+            android:id="@+id/storeName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Freddy Fazbear's Pizza"
             android:textSize="40sp"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:layout_below="@id/image"/>
 
-        <TextView
+       <LinearLayout
+           android:layout_below="@id/storeName"
+           android:id="@+id/address"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_alignParentBottom="true">
+
+       <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="210 Main St"
@@ -54,8 +57,8 @@
             android:layout_height="wrap_content"
             android:text="814-679-0020"
             android:textSize="20sp"
-            android:textAlignment="center"/>
-
-    </LinearLayout>
+            android:textAlignment="center"
+            android:layout_alignParentBottom="true"/>
+       </LinearLayout>
 
 </RelativeLayout>
