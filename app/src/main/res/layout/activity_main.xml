@@ -22,7 +22,7 @@
             android:text="Freddy Fazbear's Pizza"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
-            android:textSize="40sp"
+            android:textSize="@dimen/LargeText"
             android:layout_margin="20dp"
             android:textAlignment="center"
             android:layout_below="@id/image"/>
@@ -40,8 +40,8 @@
             android:layout_height="wrap_content"
            android:textColor="@color/colorPrimary"
 
-           android:text="210 Main St"
-            android:textSize="18sp"
+           android:text="@string/StreetAddress"
+            android:textSize="@dimen/MediumText"
             android:textAlignment="center"/>
 
         <TextView
@@ -49,8 +49,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimary"
 
-            android:text="Hartstown, PA 16131"
-            android:textSize="18sp"
+            android:text="@string/CityStateZip"
+            android:textSize="@dimen/MediumText"
             android:textAlignment="center"/>
 
         <TextView
@@ -58,8 +58,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimary"
 
-            android:text="http://freddy-fazbears-pizza.letseat.at"
-            android:textSize="18sp"
+            android:text="@string/WebAddress"
+            android:textSize="@dimen/MediumText"
             android:textAlignment="center"/>
 
         <TextView
@@ -67,8 +67,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorPrimary"
 
-            android:text="814-679-0020"
-            android:textSize="18sp"
+            android:text="@string/PhoneNumber"
+            android:textSize="@dimen/MediumText"
             android:textAlignment="center"
             android:layout_alignParentBottom="true"/>
        </LinearLayout>
@@ -77,10 +77,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:textSize="15sp"
+        android:textSize="@dimen/SmallText"
         android:textAllCaps="true"
         android:textAlignment="center"
-        android:text="went to freddy fazbear's pizza a week and a half ago, i tried to order a large pizza, and it took 48 hours to be ready, it was cold."
+        android:text="@string/ReviewOne"
         />
 
 </RelativeLayout>

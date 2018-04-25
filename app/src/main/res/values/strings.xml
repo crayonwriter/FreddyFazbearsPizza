@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Freddy Fazbear\'s Pizza</string>
+    <string name="ReviewOne">\"went to freddy fazbear\'s pizza a week and a half ago, i tried to order a large pizza, and it took 48 hours to be ready, it was cold.\"</string>
+    <string name="PhoneNumber">814-555-5555</string>
+    <string name="WebAddress">http://freddy-fazbears-pizza.letseat.at</string>
+    <string name="CityStateZip">Hartstown, PA 16131</string>
+    <string name="StreetAddress">210 Main St</string>
 </resources>
