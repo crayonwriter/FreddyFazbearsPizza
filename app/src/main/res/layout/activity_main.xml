@@ -7,80 +7,75 @@
     tools:context="com.example.android.freddyfazbearspizza.MainActivity">
 
 
-        <ImageView
-            android:id="@+id/image"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/fnaflogofreddy"
-            android:scaleType="center" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/fnaflogofreddy" />
+
+    <TextView
+        android:id="@+id/storeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_margin="20dp"
+        android:text="Freddy Fazbear's Pizza"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/LargeText"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/storeName"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/storeName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Freddy Fazbear's Pizza"
-            android:textColor="@color/colorPrimary"
-            android:textStyle="bold"
-            android:textSize="@dimen/LargeText"
-            android:layout_margin="20dp"
+            android:text="@string/StreetAddress"
             android:textAlignment="center"
-            android:layout_below="@id/image"/>
-
-       <LinearLayout
-           android:layout_below="@id/storeName"
-           android:id="@+id/address"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:orientation="vertical"
-           android:layout_alignParentBottom="true">
-
-       <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-           android:textColor="@color/colorPrimary"
-
-           android:text="@string/StreetAddress"
-            android:textSize="@dimen/MediumText"
-            android:textAlignment="center"/>
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/MediumText" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-
             android:text="@string/CityStateZip"
-            android:textSize="@dimen/MediumText"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-
-            android:text="@string/WebAddress"
-            android:textSize="@dimen/MediumText"
-            android:textAlignment="center"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorPrimary"
-
-            android:text="@string/PhoneNumber"
-            android:textSize="@dimen/MediumText"
             android:textAlignment="center"
-            android:layout_alignParentBottom="true"/>
-       </LinearLayout>
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/MediumText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/WebAddress"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/MediumText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/PhoneNumber"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/MediumText" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:textSize="@dimen/SmallText"
-        android:textAllCaps="true"
-        android:textAlignment="center"
         android:text="@string/ReviewOne"
-        />
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="@dimen/SmallText" />
 
 </RelativeLayout>
